@@ -10,6 +10,16 @@ const gameEven = () => {
   const answersToWin = 3;
   let rightAnswersCount = 0;
 
+  for (let i = 1; i <= 3; i += 1) {
+    const number = getRandomInt(1, 100);
+    const rightAnswer = (number % 2 === 0) ? 'yes' : 'no';
+    console.log(`Question: ${number}`);
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (userAnswer === rightAnswer) {
+      console.log('Correct!');
+    }
+  }
+
   do {
     const number = getRandomInt(1, 100);
     const rightAnswer = (number % 2 === 0) ? 'yes' : 'no';
