@@ -7,9 +7,6 @@ const gameEven = () => {
 
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-  const answersToWin = 3;
-  let rightAnswersCount = 0;
-
   for (let i = 1; i <= 3; i += 1) {
     const number = getRandomInt(1, 100);
     const rightAnswer = (number % 2 === 0) ? 'yes' : 'no';
@@ -17,24 +14,14 @@ const gameEven = () => {
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === rightAnswer) {
       console.log('Correct!');
+      if (i === 3) {
+        console.log(`Congratulations, ${userName}!`);
+      }
+    } else {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.\nLet's try again, ${userName}!`);
+      break;
     }
   }
-
-  do {
-    const number = getRandomInt(1, 100);
-    const rightAnswer = (number % 2 === 0) ? 'yes' : 'no';
-    console.log(`Question: ${number}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-    if (userAnswer === rightAnswer) {
-      console.log('Correct!');
-      rightAnswersCount += 1;
-    } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
-      console.log(`Let's try again, ${userName}!`);
-      rightAnswersCount = 0;
-    }
-  } while (rightAnswersCount < answersToWin);
-  console.log(`Congratulations, ${userName}!`);
 };
 
 export default gameEven;
