@@ -1,41 +1,27 @@
-import readlineSync from 'readline-sync';
-import getName from '../src/cli.js';
+// import readlineSync from 'readline-sync';
+// import getName from '../src/cli.js';
 import getRandomInt from '../src/random.js';
 
-const gameCalc = () => {
-  const userName = getName();
+export const gameCalcRule = () => console.log('What is the result of the expression?');
+
+export const gameCalc = () => {
+  const number1 = getRandomInt(1, 100);
+  const number2 = getRandomInt(1, 100);
   const operators = ['+', '-', '*'];
+  const operator = operators[getRandomInt(0, 2)];
   let rightAnswer = '';
-
-  console.log('What is the result of the expression?');
-
-  for (let i = 1; i <= 3; i += 1) {
-    const number1 = getRandomInt(1, 100);
-    const number2 = getRandomInt(1, 100);
-    const operator = operators[Math.floor(Math.random() * operators.length)];
-    switch (operator) {
-      case '+':
-        rightAnswer = number1 + number2;
-        break;
-      case '-':
-        rightAnswer = number1 - number2;
-        break;
-      default:
-        rightAnswer = number1 * number2;
-        break;
-    }
-    console.log(`Question: ${number1} ${operator} ${number2}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-    if (userAnswer === rightAnswer.toString()) {
-      console.log('Correct!');
-      if (i === 3) {
-        console.log(`Congratulations, ${userName}!`);
-      }
-    } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.\nLet's try again, ${userName}!`);
+  switch (operator) {
+    case '+':
+      rightAnswer = number1 + number2;
       break;
-    }
+    case '-':
+      rightAnswer = number1 - number2;
+      break;
+    default:
+      rightAnswer = number1 * number2;
+      break;
   }
+  const question = `${number1} ${operator} ${number2}`;
+  const result = [question, rightAnswer];
+  return result;
 };
-
-export default gameCalc;
