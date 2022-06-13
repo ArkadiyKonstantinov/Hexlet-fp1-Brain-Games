@@ -5,3 +5,6 @@
 
 ### Asclinema for Brain-Even:
 [![asciicast](https://asciinema.org/a/3xifb2btDtVPu3lGd2P9tKuqG.svg)](https://asciinema.org/a/3xifb2btDtVPu3lGd2P9tKuqG)
+
+### Asclinema for Brain-Calc:
+[![asciicast](https://asciinema.org/a/qapWgcLdDQm63R6JtrC5M9RWW.svg)](https://asciinema.org/a/qapWgcLdDQm63R6JtrC5M9RWW)
