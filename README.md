@@ -14,3 +14,6 @@
 
 ### Asclinema for Brain-Progression:
 [![asciicast](https://asciinema.org/a/WXswKOeJCmf9qTvOzIfGcXzWi.svg)](https://asciinema.org/a/WXswKOeJCmf9qTvOzIfGcXzWi)
+
+### Asclinema for Brain-Pime:
+[![asciicast](https://asciinema.org/a/zurltW4v4tMFNlQJJrGOFdGMa.svg)](https://asciinema.org/a/zurltW4v4tMFNlQJJrGOFdGMa)
