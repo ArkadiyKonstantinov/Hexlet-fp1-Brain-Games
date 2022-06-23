@@ -11,3 +11,6 @@
 
 ### Asclinema for Brain-GCD:
 [![asciicast](https://asciinema.org/a/TVWB0O77cmlnmCtunAInqASda.svg)](https://asciinema.org/a/TVWB0O77cmlnmCtunAInqASda)
+
+### Asclinema for Brain-Progression:
+[![asciicast](https://asciinema.org/a/WXswKOeJCmf9qTvOzIfGcXzWi.svg)](https://asciinema.org/a/WXswKOeJCmf9qTvOzIfGcXzWi)
