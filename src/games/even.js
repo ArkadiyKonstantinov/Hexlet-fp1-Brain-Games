@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
-import getName from '../src/cli.js';
-import getRandomInt from '../src/random.js';
+import getName from '../cli.js';
+import getRandomInt from '../random.js';
 
 const gameEven = () => {
   const userName = getName();

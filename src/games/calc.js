@@ -1,6 +1,4 @@
-// import readlineSync from 'readline-sync';
-// import getName from '../src/cli.js';
-import getRandomInt from '../src/random.js';
+import getRandomInt from '../random.js';
 
 export const gameCalcRule = () => console.log('What is the result of the expression?');
 

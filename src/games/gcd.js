@@ -1,4 +1,4 @@
-import getRandomInt from '../src/random.js';
+import getRandomInt from '../random.js';
 
 const gcd = (a, b) => {
   if (b) {

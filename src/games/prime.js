@@ -1,4 +1,4 @@
-import getRandomInt from '../src/random.js';
+import getRandomInt from '../random.js';
 
 export const gamePrimeRule = () => console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
