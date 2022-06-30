@@ -1,8 +1,8 @@
 import getRandomInt from '../random.js';
 
-export const gameProgressionRule = () => console.log('What number is missing in the progression?');
+export const progressionRule = () => console.log('What number is missing in the progression?');
 
-export const gameProgression = () => {
+export const progression = () => {
   let number = getRandomInt(1, 19);
   const increment = getRandomInt(1, 10);
   const missedNumberPosition = getRandomInt(1, 10);
