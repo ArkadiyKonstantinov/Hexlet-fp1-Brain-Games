@@ -15,7 +15,7 @@ export const progression = () => {
       rightAnswer = number;
       number += increment;
     } else {
-      question = `${question} ${number}`;
+      question = (question === '') ? `${number}` : `${question} ${number}`;
       number += increment;
     }
   }
