@@ -15,10 +15,11 @@ export const progression = () => {
       rightAnswer = number;
       number += increment;
     } else {
-      question = (question === '') ? `${number}` : `${question} ${number}`;
+      question = `${question} ${number}`;
       number += increment;
     }
   }
+  question = question.trim();
 
   const result = [question, rightAnswer];
   return result;
