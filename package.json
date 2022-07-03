@@ -1,8 +1,8 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/ArkadiyKonstantinov/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/ArkadiyKonstantinov/frontend-project-lvl1/actions)",
-  "main": "index.js",
+  "description": "A set of five console games for pump your brain",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/ArkadiyKonstantinov/frontend-project-lvl1.git"
   },
-  "author": "",
+  "author": "Arkadiy Konstantinov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ArkadiyKonstantinov/frontend-project-lvl1/issues"
