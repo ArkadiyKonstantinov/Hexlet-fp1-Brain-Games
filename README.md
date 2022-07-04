@@ -1,5 +1,5 @@
 # Brain Games
-[![Actions Status](https://github.com/ArkadiyKonstantinov/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/ArkadiyKonstantinov/frontend-project-lvl1/actions)[![Maintainability](https://api.codeclimate.com/v1/badges/c4dacddea91489587a2d/maintainability)](https://codeclimate.com/github/ArkadiyKonstantinov/frontend-project-lvl1/maintainability)
+[![Actions Status](https://github.com/ArkadiyKonstantinov/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/ArkadiyKonstantinov/frontend-project-lvl1/actions) [![ESLint](https://github.com/ArkadiyKonstantinov/frontend-project-lvl1/actions/workflows/eslint.yml/badge.svg)](https://github.com/ArkadiyKonstantinov/frontend-project-lvl1/actions/workflows/eslint.yml) [![Maintainability](https://api.codeclimate.com/v1/badges/c4dacddea91489587a2d/maintainability)](https://codeclimate.com/github/ArkadiyKonstantinov/frontend-project-lvl1/maintainability)
 
 A set of five console games built on the principle of popular mobile applications for pumping the brain. This is the first educational project for the Hexlet school.
 
