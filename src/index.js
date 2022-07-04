@@ -22,6 +22,3 @@ const start = (game, gameRule) => {
 };
 
 export default start;
-
-
-
