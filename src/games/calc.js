@@ -1,8 +1,8 @@
 import getRandomInt from '../utils.js';
 
-export const calcRule = () => console.log('What is the result of the expression?');
+export const description = () => 'What is the result of the expression?';
 
-export const calc = () => {
+export const generateRound = () => {
   const number1 = getRandomInt(1, 100);
   const number2 = getRandomInt(1, 100);
   const operators = ['+', '-', '*'];
