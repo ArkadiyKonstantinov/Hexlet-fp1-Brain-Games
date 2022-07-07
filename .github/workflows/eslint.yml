@@ -16,7 +16,7 @@ jobs:
           node-version: 16.15.0 
 
       - name: Install modules
-        run: npm ci
+        run: make install
 
       - name: Run ESLint
-        run: npx eslint .
+        run: make lint
