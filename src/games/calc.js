@@ -1,6 +1,6 @@
 import getRandomInt from '../utils.js';
 
-export const description = () => 'What is the result of the expression?';
+export const description = 'What is the result of the expression?';
 
 export const generateRound = () => {
   const number1 = getRandomInt(1, 100);

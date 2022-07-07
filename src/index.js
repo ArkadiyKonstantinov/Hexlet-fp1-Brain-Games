@@ -4,7 +4,7 @@ const start = (game) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  console.log(game.description());
+  console.log(game.description);
 
   const roundCountToWin = 3;
   for (let i = 1; i <= roundCountToWin; i += 1) {

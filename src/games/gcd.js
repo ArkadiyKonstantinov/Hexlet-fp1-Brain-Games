@@ -7,7 +7,7 @@ const calcGcd = (a, b) => {
   return a;
 };
 
-export const description = () => 'Find the greatest common divisor of given numbers.';
+export const description = 'Find the greatest common divisor of given numbers.';
 
 export const generateRound = () => {
   const number1 = getRandomInt(1, 10);

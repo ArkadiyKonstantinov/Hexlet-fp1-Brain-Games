@@ -1,6 +1,6 @@
 import getRandomInt from '../utils.js';
 
-export const description = () => 'What number is missing in the progression?';
+export const description = 'What number is missing in the progression?';
 
 export const generateRound = () => {
   let number = getRandomInt(1, 19);
