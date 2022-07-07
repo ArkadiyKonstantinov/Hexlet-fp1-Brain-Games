@@ -1,16 +1,16 @@
 import getRandomInt from '../utils.js';
 
-export const progressionRule = () => console.log('What number is missing in the progression?');
+export const description = () => 'What number is missing in the progression?';
 
-export const progression = () => {
+export const generateRound = () => {
   let number = getRandomInt(1, 19);
   const increment = getRandomInt(1, 10);
-  const missedNumberPosition = getRandomInt(1, 10);
+  const missingNumberPosition = getRandomInt(1, 10);
   let question = '';
   let rightAnswer = 0;
 
   for (let i = 1; i <= 10; i += 1) {
-    if (i === missedNumberPosition) {
+    if (i === missingNumberPosition) {
       question = `${question} ..`;
       rightAnswer = number;
       number += increment;
