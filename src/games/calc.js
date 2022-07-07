@@ -1,4 +1,4 @@
-import getRandomInt from '../random.js';
+import getRandomInt from '../utils.js';
 
 export const calcRule = () => console.log('What is the result of the expression?');
 

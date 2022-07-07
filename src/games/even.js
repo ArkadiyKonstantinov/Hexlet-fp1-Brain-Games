@@ -1,4 +1,4 @@
-import getRandomInt from '../random.js';
+import getRandomInt from '../utils.js';
 
 export const description = () => 'Answer "yes" if the number is even, otherwise answer "no".';
 

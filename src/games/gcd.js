@@ -1,4 +1,4 @@
-import getRandomInt from '../random.js';
+import getRandomInt from '../utils.js';
 
 const getGcd = (a, b) => {
   if (b) {

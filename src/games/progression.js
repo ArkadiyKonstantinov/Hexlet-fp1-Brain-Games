@@ -1,4 +1,4 @@
-import getRandomInt from '../random.js';
+import getRandomInt from '../utils.js';
 
 export const progressionRule = () => console.log('What number is missing in the progression?');
 
