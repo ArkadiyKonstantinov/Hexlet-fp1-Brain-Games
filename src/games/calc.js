@@ -6,7 +6,7 @@ export const generateRound = () => {
   const number1 = getRandomInt(1, 100);
   const number2 = getRandomInt(1, 100);
   const operators = ['+', '-', '*'];
-  const operator = operators[getRandomInt(0, 2)];
+  const operator = operators[getRandomInt(0, operators.length - 1)];
   let rightAnswer = '';
   switch (operator) {
     case '+':
