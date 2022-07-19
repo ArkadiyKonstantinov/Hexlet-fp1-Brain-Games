@@ -22,6 +22,5 @@ export const generateRound = () => {
   question = question.trim();
   rightAnswer = String(rightAnswer);
 
-  const result = [question, rightAnswer];
-  return result;
+  return [question, rightAnswer];
 };

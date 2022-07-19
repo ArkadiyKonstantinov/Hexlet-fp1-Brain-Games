@@ -15,6 +15,5 @@ export const generateRound = () => {
   const number = getRandomInt(2, 19);
   const question = `${number}`;
   const rightAnswer = isPrime(number) ? 'yes' : 'no';
-  const result = [question, rightAnswer];
-  return result;
+  return [question, rightAnswer];
 };

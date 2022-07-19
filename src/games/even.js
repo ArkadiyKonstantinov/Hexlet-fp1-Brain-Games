@@ -6,6 +6,5 @@ export const generateRound = () => {
   const number = getRandomInt(1, 100);
   const rightAnswer = (number % 2 === 0) ? 'yes' : 'no';
   const question = `${number}`;
-  const result = [question, rightAnswer];
-  return result;
+  return [question, rightAnswer];
 };

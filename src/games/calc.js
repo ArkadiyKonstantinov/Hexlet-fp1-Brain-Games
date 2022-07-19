@@ -20,6 +20,5 @@ export const generateRound = () => {
       break;
   }
   const question = `${number1} ${operator} ${number2}`;
-  const result = [question, rightAnswer];
-  return result;
+  return [question, rightAnswer];
 };
