@@ -10,13 +10,13 @@ export const generateRound = () => {
   let rightAnswer = '';
   switch (operator) {
     case '+':
-      rightAnswer = number1 + number2;
+      rightAnswer = String(number1 + number2);
       break;
     case '-':
-      rightAnswer = number1 - number2;
+      rightAnswer = String(number1 - number2);
       break;
     default:
-      rightAnswer = number1 * number2;
+      rightAnswer = String(number1 * number2);
       break;
   }
   const question = `${number1} ${operator} ${number2}`;
