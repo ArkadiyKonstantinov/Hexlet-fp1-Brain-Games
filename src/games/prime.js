@@ -13,7 +13,7 @@ export const description = 'Answer "yes" if given number is prime. Otherwise ans
 
 export const generateRound = () => {
   const number = getRandomInt(2, 19);
-  const question = `${number}`;
+  const question = String(number);
   const rightAnswer = isPrime(number) ? 'yes' : 'no';
   return [question, rightAnswer];
 };
