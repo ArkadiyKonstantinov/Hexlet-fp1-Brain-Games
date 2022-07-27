@@ -1,6 +1,6 @@
 import getRandomInt from '../utils.js';
 
-const progressionLength = 10;
+const progressionLength = getRandomInt(5, 10);
 
 const getProgression = (startNum, increment, missingNumberPosition, length) => {
   const result = [startNum];
