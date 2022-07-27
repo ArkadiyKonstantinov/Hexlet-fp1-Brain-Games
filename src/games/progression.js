@@ -1,6 +1,5 @@
 import getRandomInt from '../utils.js';
-
-const progressionLength = getRandomInt(5, 10);
+import start from '../index.js';
 
 const getProgression = (startNum, increment, missingNumberPosition, length) => {
   const result = [startNum];
@@ -11,9 +10,10 @@ const getProgression = (startNum, increment, missingNumberPosition, length) => {
   return result.join(' ');
 };
 
-export const description = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
-export const generateRound = () => {
+const generateRound = () => {
+  const progressionLength = getRandomInt(5, 10);
   const startNumber = getRandomInt(1, 19);
   const increment = getRandomInt(1, 10);
   const missingNumberPosition = getRandomInt(1, 10);
@@ -22,3 +22,7 @@ export const generateRound = () => {
 
   return [question, rightAnswer];
 };
+
+const gameProgresion = { description, generateRound };
+
+export default () => start(gameProgresion);

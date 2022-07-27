@@ -1,4 +1,5 @@
 import getRandomInt from '../utils.js';
+import start from '../index.js';
 
 const calcGcd = (a, b) => {
   let num1 = 0;
@@ -16,13 +17,16 @@ const calcGcd = (a, b) => {
 
   return calcGcd(num2, num1 % num2);
 };
+const description = 'Find the greatest common divisor of given numbers.';
 
-export const description = 'Find the greatest common divisor of given numbers.';
-
-export const generateRound = () => {
+const generateRound = () => {
   const number1 = getRandomInt(1, 10);
   const number2 = getRandomInt(1, 10);
   const question = `${number1} ${number2}`;
   const rightAnswer = String(calcGcd(number1, number2));
   return [question, rightAnswer];
 };
+
+const gameGcd = { description, generateRound };
+
+export default () => start(gameGcd);
